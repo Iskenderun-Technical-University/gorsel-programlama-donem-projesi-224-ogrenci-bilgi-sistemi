@@ -1,28 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {}
+    "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {
+    "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+        "projectUniqueName": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
         "projectName": "OBS",
-        "projectPath": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
-        "packagesPath": "C:\\Users\\BBsWindows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
+        "projectPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+        "packagesPath": "C:\\Users\\mfgun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\BBsWindows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mfgun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -49,20 +45,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
