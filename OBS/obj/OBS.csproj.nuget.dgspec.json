@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {}
+    "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {
+    "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+        "projectUniqueName": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
         "projectName": "OBS",
-        "projectPath": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
-        "packagesPath": "C:\\Users\\BBsWindows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BBsWindows\\source\\repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
+        "projectPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+        "packagesPath": "C:\\Users\\mfgun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\BBsWindows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mfgun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
