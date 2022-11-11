@@ -19,9 +19,20 @@ namespace OBS.akademisyen
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             kullanicigirisekrani goKullaniciGirisEkrani = new kullanicigirisekrani();
             goKullaniciGirisEkrani.Show();
             this.Hide();
+        }
+
+        private void button2_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
