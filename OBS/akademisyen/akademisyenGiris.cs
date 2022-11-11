@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OBS.islemler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,7 @@ namespace OBS.akademisyen
         {
             InitializeComponent();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -33,6 +34,21 @@ namespace OBS.akademisyen
         private void button2_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (girisKontrol.akademisyenGirisi(textBox1.Text, textBox2.Text))
+            {
+                akademisyenMenu girAkademisyenMenu = new akademisyenMenu();
+                MessageBox.Show("Giriş Başarılı! Akademisyen Bilgi Sistemine Yönlendiriliyorsunuz...", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                girAkademisyenMenu.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı!", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

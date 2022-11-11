@@ -4,6 +4,9 @@
     <Compile Update="akademisyen\akademisyenGiris.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="akademisyen\akademisyenMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="kullanicigirisekrani.cs">
       <SubType>Form</SubType>
     </Compile>
