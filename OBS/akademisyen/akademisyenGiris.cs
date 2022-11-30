@@ -40,7 +40,7 @@ namespace OBS.akademisyen
         {
             if (girisKontrol.akademisyenGirisi(textBox1.Text, textBox2.Text))
             {
-                akademisyenMenu girAkademisyenMenu = new akademisyenMenu();
+                akademisyenMenu girAkademisyenMenu = new();
                 MessageBox.Show("Giriş Başarılı! Akademisyen Bilgi Sistemine Yönlendiriliyorsunuz...", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 girAkademisyenMenu.ShowDialog();

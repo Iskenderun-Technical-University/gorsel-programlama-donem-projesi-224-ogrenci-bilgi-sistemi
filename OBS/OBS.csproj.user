@@ -10,5 +10,8 @@
     <Compile Update="kullanicigirisekrani.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ogrenci\ogrenciMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
