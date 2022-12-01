@@ -25,5 +25,26 @@ namespace OBS.ogrenci
             tiklaGeriDonGirisEkrani.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ogrenciNotSayfasi tiklaGirNotSayfasi = new ogrenciNotSayfasi();
+            tiklaGirNotSayfasi.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ogrenciTranskript tiklaGirTranskriptSayfasi = new ogrenciTranskript();
+            tiklaGirTranskriptSayfasi.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ogrenciDersKayıit tiklaGirDersKayıt = new ogrenciDersKayıit();
+            tiklaGirDersKayıt.Show();
+            this.Hide();
+        }
     }
 }

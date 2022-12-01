@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ogrenciMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -75,6 +76,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -88,11 +90,22 @@
             this.panel1.Size = new System.Drawing.Size(221, 568);
             this.panel1.TabIndex = 1;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(11, 110);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(195, 29);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Ders Kayıt";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(3, 223);
+            this.label9.Location = new System.Drawing.Point(3, 253);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(149, 20);
             this.label9.TabIndex = 7;
@@ -102,7 +115,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(3, 118);
+            this.label8.Location = new System.Drawing.Point(3, 148);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 20);
             this.label8.TabIndex = 6;
@@ -120,7 +133,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(11, 246);
+            this.button5.Location = new System.Drawing.Point(11, 276);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 29);
             this.button5.TabIndex = 4;
@@ -130,7 +143,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(11, 176);
+            this.button4.Location = new System.Drawing.Point(11, 206);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 29);
             this.button4.TabIndex = 3;
@@ -140,7 +153,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(11, 141);
+            this.button3.Location = new System.Drawing.Point(11, 171);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 29);
             this.button3.TabIndex = 2;
@@ -157,16 +170,19 @@
             this.button2.Text = "Transkript";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(11, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "Not Listesi";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -221,7 +237,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Lime;
+            this.panel4.BackColor = System.Drawing.Color.LimeGreen;
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(483, 71);
             this.panel4.Name = "panel4";
@@ -299,6 +315,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ogrenciMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Öğrenci Bilgi Sistemi";
@@ -343,5 +360,6 @@
         private Label label8;
         private Label label7;
         private PictureBox pictureBox2;
+        private Button button6;
     }
 }
