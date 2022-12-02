@@ -60,6 +60,12 @@ namespace OBS.ogrenci
             tiklaGirDevamsizlik.Show();
             this.Hide();
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ogrenciBilgileri tiklaGir = new ogrenciBilgileri();
+            tiklaGir.Show();
+            this.Hide();
+        }
     }
 }

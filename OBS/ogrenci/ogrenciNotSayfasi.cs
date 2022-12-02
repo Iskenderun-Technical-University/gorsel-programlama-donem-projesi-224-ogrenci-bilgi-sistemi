@@ -23,5 +23,10 @@ namespace OBS.ogrenci
             tiklaDonAnaMenu.Show();
             this.Hide();
         }
+
+        private void ogrenciNotSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

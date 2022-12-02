@@ -115,6 +115,7 @@
             this.Name = "ogrenciNotSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Öğrenci Not Bilgisi Ekranı";
+            this.Load += new System.EventHandler(this.ogrenciNotSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
