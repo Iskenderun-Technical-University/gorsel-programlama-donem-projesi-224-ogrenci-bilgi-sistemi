@@ -17,7 +17,7 @@ namespace OBS.ogrenci
         {
             InitializeComponent();
         }
-
+        
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             kullanicigirisekrani tiklaGeriDonGirisEkrani = new kullanicigirisekrani();
@@ -46,5 +46,20 @@ namespace OBS.ogrenci
             tiklaGirDersKayıt.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ogrenciDersler tiklaGirDersler = new ogrenciDersler();
+            tiklaGirDersler.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ogrenciDevamsizlik tiklaGirDevamsizlik = new ogrenciDevamsizlik();
+            tiklaGirDevamsizlik.Show();
+            this.Hide();
+        }
+        
     }
 }
