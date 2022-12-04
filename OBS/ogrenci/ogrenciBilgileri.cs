@@ -24,7 +24,7 @@ namespace OBS.ogrenci
 
         private void ogrenciBilgileri_Load(object sender, EventArgs e)
         {
-            pictureBox2.BackColor = Color.Transparent;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

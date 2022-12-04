@@ -43,5 +43,28 @@ namespace OBS.islemler
                 return false;
             }
         }
+
+        public static bool ogrenciGirisi(string kullaniciAdi,string sifre)
+        {
+            string sorgu = "select * from tbl_ogrenci where ogrNo=@user and ogrSifre=@pass";
+
+            con = new SqlConnection(sqlcon);
+            cmd = new SqlCommand(sorgu, con);
+            cmd.Parameters.AddWithValue("@user", kullaniciAdi);
+            cmd.Parameters.AddWithValue("@pass", sifre);
+
+            con.Open();
+            dr=cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                con.Close();
+                return true;
+            }
+            else
+            {
+                con.Close();
+                return false;
+            }
+        }
     }
 }
