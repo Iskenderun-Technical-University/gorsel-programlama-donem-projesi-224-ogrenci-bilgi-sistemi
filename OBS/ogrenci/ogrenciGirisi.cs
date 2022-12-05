@@ -18,7 +18,7 @@ namespace OBS.ogrenci
         {
             InitializeComponent();
         }
-
+        public static string gidenBilgi = "";
         private void button3_Click(object sender, EventArgs e)
         {
             kullanicigirisekrani goKullaniciGirisEkrani = new kullanicigirisekrani();
@@ -37,6 +37,7 @@ namespace OBS.ogrenci
             {
                 ogrenciMenu tiklaGirMenu = new();
                 MessageBox.Show("Giriş Başarılı! Öğrenci Bilgi Sistemine Yönlendiriliyorsunuz...", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gidenBilgi = textBox1.Text;
                 this.Hide();
                 tiklaGirMenu.ShowDialog();
             }
