@@ -79,6 +79,11 @@ namespace OBS.ogrenci
 
             if (textBoxTel.Text == " ")
             {
+                MessageBox.Show("Herhangi Bir Değişiklik Yapmadınız!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                
                 con = new SqlConnection(Veritabani_Baglantisi.sqlCon);
                 string sql = "update tbl_ogrenci set ogrTel=@tel,ogrMail=@mail,ogrAdres=@adress where ogrNo=@no";
                 cmd = new SqlCommand();
@@ -93,10 +98,6 @@ namespace OBS.ogrenci
                 con.Close();
 
                 MessageBox.Show("Bilgileriniz Başarıyla Güncellendi!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Herhangi Bir Değişiklik Yapmadınız!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
