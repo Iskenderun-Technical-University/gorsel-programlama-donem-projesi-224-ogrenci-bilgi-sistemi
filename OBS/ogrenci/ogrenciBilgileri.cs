@@ -104,5 +104,11 @@ namespace OBS.ogrenci
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ogrenciSifre tiklaGir = new ogrenciSifre();
+            tiklaGir.ShowDialog();
+        }
     }
 }

@@ -31,6 +31,9 @@
     <Compile Update="ogrenci\ogrenciNotSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ogrenci\ogrenciSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ogrenci\ogrenciTranskript.cs">
       <SubType>Form</SubType>
     </Compile>

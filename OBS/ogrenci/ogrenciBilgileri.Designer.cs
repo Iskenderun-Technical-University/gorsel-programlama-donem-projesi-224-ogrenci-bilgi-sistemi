@@ -91,6 +91,7 @@
             this.button1.Text = "Şifre Güncelleme";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -371,14 +372,14 @@
             this.textBoxTel.Location = new System.Drawing.Point(136, 29);
             this.textBoxTel.Name = "textBoxTel";
             this.textBoxTel.Size = new System.Drawing.Size(253, 27);
-            this.textBoxTel.TabIndex = 17;
+            this.textBoxTel.TabIndex = 2;
             // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(507, 208);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(134, 29);
-            this.button4.TabIndex = 16;
+            this.button4.TabIndex = 5;
             this.button4.Text = "Bilgileri Kaydet";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
@@ -389,7 +390,7 @@
             this.button3.Location = new System.Drawing.Point(507, 32);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 29);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 1;
             this.button3.Text = "Bilgileri Güncelle";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
@@ -401,7 +402,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(136, 117);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(253, 120);
-            this.richTextBox1.TabIndex = 15;
+            this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // textBoxMail
@@ -410,7 +411,7 @@
             this.textBoxMail.Location = new System.Drawing.Point(136, 68);
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(253, 27);
-            this.textBoxMail.TabIndex = 12;
+            this.textBoxMail.TabIndex = 3;
             // 
             // label12
             // 
