@@ -22,19 +22,34 @@ namespace OBS.islemler
         // bağlantı kontrolü
         public static bool baglantiKontrol()
         {
-            using(con=new SqlConnection(sqlCon))
+            using (con = new SqlConnection(sqlCon))
             {
                 try
                 {
                     con.Open();
                     return true;
                 }
-                catch(SqlException exp)
+                catch (SqlException exp)
                 {
                     MessageBox.Show(exp.Message);
                     return false;
                 }
             }
+        }
+
+        // herhangi bir formda kullanilan datagridview'in class sayesinde dinamik olarak database'den veri cekmesini saglayan method
+
+        public static DataGridView gridVeriAktarimi(DataGridView grid, string sqlSelectSorgu)
+        {
+            con = new SqlConnection(sqlCon);
+            da =new  SqlDataAdapter(sqlSelectSorgu, con);
+            ds = new DataSet();
+
+            con.Open();
+            da.Fill(ds, sqlSelectSorgu);
+            grid.DataSource = ds.Tables[sqlSelectSorgu];
+            con.Close();
+            return grid;
         }
     }
 }
