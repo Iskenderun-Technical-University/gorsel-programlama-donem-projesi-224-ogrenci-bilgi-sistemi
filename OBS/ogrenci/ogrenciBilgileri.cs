@@ -27,6 +27,9 @@ namespace OBS.ogrenci
 
         private void ogrenciBilgileri_Load(object sender, EventArgs e)
         {
+            /* veritabanı baglantisi ile ogrenci bilgileri tablosundan giris sayfasinda girilen ogrenci no'ya göre
+               textboxlara ogrenci bilgileri yazdirilir. */
+
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             labelGelenBilgi.Text = ogrenciGirisi.gidenBilgi.ToString();
@@ -53,6 +56,13 @@ namespace OBS.ogrenci
                 
             }
             con.Close();
+
+            // form acildiginda belirtilen textboxların enabled ozelligi false olarak atanir
+
+            textBoxTel.Enabled = false;
+            textBoxMail.Enabled = false;
+            richTextBox1.Enabled = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,9 +74,12 @@ namespace OBS.ogrenci
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBoxTel.Clear();
-            textBoxMail.Clear();
-            richTextBox1.Clear(); 
+            /* form acildiginda false olarak atanan enabled ozellikleri butona tiklandiginda true olarak deigstirilir ve 
+               databasede degisiklik yapabilme ozelligi aktif hale gelir. */ 
+
+            textBoxTel.Enabled = true;
+            textBoxMail.Enabled = true;
+            richTextBox1.Enabled = true; 
         }
 
         private void button4_Click(object sender, EventArgs e)
