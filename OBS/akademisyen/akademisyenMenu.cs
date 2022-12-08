@@ -16,5 +16,14 @@ namespace OBS.akademisyen
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            kullanicigirisekrani tiklaGirDon = new kullanicigirisekrani();
+            tiklaGirDon.Show();
+            this.Hide();
+        }
+
+       
     }
 }
