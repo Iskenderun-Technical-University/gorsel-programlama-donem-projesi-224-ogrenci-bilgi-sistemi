@@ -10,6 +10,9 @@
     <Compile Update="kullanicigirisekrani.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ogrenci\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ogrenci\ogrenciBilgileri.cs">
       <SubType>Form</SubType>
     </Compile>

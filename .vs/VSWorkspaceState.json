@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\OBS",
+    "\\OBS\\ogrenci"
   ],
-  "SelectedNode": "\\OBS.sln",
+  "SelectedNode": "\\OBS\\ogrenci\\ogrenciBilgileri.cs",
   "PreviewInSolutionExplorer": false
 }
