@@ -140,6 +140,7 @@
             this.öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem.Name = "öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem";
             this.öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem.Size = new System.Drawing.Size(345, 26);
             this.öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem.Text = "Öğrenci Bilgileri Görüntüle/Güncelle";
+            this.öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem_Click);
             // 
             // öğrenciSayısıToolStripMenuItem
             // 
@@ -152,12 +153,14 @@
             this.öğrenciKayıtEklemeToolStripMenuItem.Name = "öğrenciKayıtEklemeToolStripMenuItem";
             this.öğrenciKayıtEklemeToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.öğrenciKayıtEklemeToolStripMenuItem.Text = "Öğrenci Kayıt Ekleme";
+            this.öğrenciKayıtEklemeToolStripMenuItem.Click += new System.EventHandler(this.öğrenciKayıtEklemeToolStripMenuItem_Click);
             // 
             // öğrenciKayıtSilmeToolStripMenuItem
             // 
             this.öğrenciKayıtSilmeToolStripMenuItem.Name = "öğrenciKayıtSilmeToolStripMenuItem";
             this.öğrenciKayıtSilmeToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.öğrenciKayıtSilmeToolStripMenuItem.Text = "Öğrenci Kayıt Silme";
+            this.öğrenciKayıtSilmeToolStripMenuItem.Click += new System.EventHandler(this.öğrenciKayıtSilmeToolStripMenuItem_Click);
             // 
             // menuStrip2
             // 
@@ -231,7 +234,6 @@
             this.akademisyenBilgileriToolStripMenuItem.Name = "akademisyenBilgileriToolStripMenuItem";
             this.akademisyenBilgileriToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
             this.akademisyenBilgileriToolStripMenuItem.Text = "Akademisyen Bilgileri";
-            
             // 
             // pictureBox3
             // 
@@ -258,7 +260,6 @@
             this.Name = "akademisyenMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AKADEMİK PERSONEL BİLGİ SİSTEMİ";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

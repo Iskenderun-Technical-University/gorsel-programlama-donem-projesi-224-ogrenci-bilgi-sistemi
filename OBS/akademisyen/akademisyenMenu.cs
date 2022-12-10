@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OBS.ogrenci;
 
 namespace OBS.akademisyen
 {
@@ -16,7 +17,12 @@ namespace OBS.akademisyen
         {
             InitializeComponent();
         }
-
+        public void sayfaGecis()
+        {
+            ogrenciEklemeGüncellemeSilme tiklaGir = new ogrenciEklemeGüncellemeSilme();
+            tiklaGir.Show();
+            this.Hide();
+        }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             kullanicigirisekrani tiklaGirDon = new kullanicigirisekrani();
@@ -24,6 +30,19 @@ namespace OBS.akademisyen
             this.Hide();
         }
 
-       
+        private void öğrenciKayıtEklemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sayfaGecis();
+        }
+
+        private void öğrenciKayıtSilmeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sayfaGecis();
+        }
+
+        private void öğrenciBilgileriGörüntüleGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sayfaGecis();
+        }
     }
 }
