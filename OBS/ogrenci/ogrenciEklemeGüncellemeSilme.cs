@@ -45,20 +45,21 @@ namespace OBS.ogrenci
             dateTimePickerKT.Text = DateTime.Now.ToString();
             comboBoxBOLUM.Text = "";
             comboBoxDY.Text = "";
-            comboBoxFAKULTE.Text = "";0
+            comboBoxFAKULTE.Text = "";
         }
         private void button1_Click(object sender, EventArgs e)
         {
             txtTemizlemeFonk();
         }
 
+        //database'e ogrenci ekleme islemi
         private void button2_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand();
             string sqlSorgusu = "insert into tbl_ogrenci(ogrAd,ogrSoyad,ogrSifre,ogrTc,ogrDt,ogrDy,ogrTel,ogrAdres,ogrMail,ogrFakulte,ogrBolum,ogrDanışman,ogrKayit) values(@name,@surname,@pass,@tc,@dt,@dy,@tel,@adress,@mail,@fakulte,@bolum,@danısman,@kt)";
-            //(@name, @surname, @pass, @tc, @dt, @dy, @tel, @adress, @mail, @fakulte, @bolum, @danısman, @kt)
+            
             cmd.Parameters.AddWithValue("@name", textBoxAD.Text);
-            cmd.Parameters.AddWithValue("@surname", textBoxSOYAD.Text);
+            cmd.Parameters.AddWithValue("@surname", textBoxSOYAD.Text.ToUpper());
             cmd.Parameters.AddWithValue("@pass", textBoxSİFRE.Text);
             cmd.Parameters.AddWithValue("@tc",maskedTextBoxTC.Text);
             cmd.Parameters.AddWithValue("@dt", DateTime.Now);
@@ -78,6 +79,33 @@ namespace OBS.ogrenci
             txtTemizlemeFonk();
 
         }
+
+        //database'deki verileri guncelleme islemi
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con = new SqlConnection(Veritabani_Baglantisi.sqlCon);
+            string sqlSorgu = "update tbl_ogrenci set ogrAd=@name,ogrSoyad=@surname,ogrSifre=@pass,ogrTc=@tc,ogrDt=@dt,ogrDy=@dy,ogrTel=@tel,ogrAdres=@adress,ogrMail=@mail,ogrFakulte=@fakulte,ogrBolum=@bolum,ogrDanışman=@danisman,ogrKayit=@kt where ogrNo=@nmra";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@nmra", textBoxNO.Text);
+            cmd.Parameters.AddWithValue("@name", textBoxAD.Text);
+            cmd.Parameters.AddWithValue("@surname", textBoxSOYAD.Text.ToUpper());
+            cmd.Parameters.AddWithValue("@pass", textBoxSİFRE.Text);
+            cmd.Parameters.AddWithValue("@tc", maskedTextBoxTC.Text);
+            cmd.Parameters.AddWithValue("@dt", DateTime.Now);
+            cmd.Parameters.AddWithValue("@dy", comboBoxDY.Text);
+            cmd.Parameters.AddWithValue("@tel", textBoxTEL.Text);
+            cmd.Parameters.AddWithValue("@adress", textBoxADRES.Text);
+            cmd.Parameters.AddWithValue("@mail", textBoxMAİL.Text);
+            cmd.Parameters.AddWithValue("@fakulte", comboBoxFAKULTE.Text);
+            cmd.Parameters.AddWithValue("@bolum", comboBoxBOLUM.Text);
+            cmd.Parameters.AddWithValue("@danisman", textBoxDANISMAN.Text);
+            cmd.Parameters.AddWithValue("@kt", DateTime.Now);
+            Veri_Islemleri.veriAktarma(sqlSorgu, cmd);
+            Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
+
+            MessageBox.Show("Güncelleme İşlemi Gerçekleşti!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            txtTemizlemeFonk();
+        }   
 
         private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -101,5 +129,7 @@ namespace OBS.ogrenci
         {
             Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
         }
+
+       
     }
 }
