@@ -55,36 +55,53 @@ namespace OBS.ogrenci
         //database'e ogrenci ekleme islemi
         private void button2_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand();
-            string sqlSorgusu = "insert into tbl_ogrenci(ogrAd,ogrSoyad,ogrSifre,ogrTc,ogrDt,ogrDy,ogrTel,ogrAdres,ogrMail,ogrFakulte,ogrBolum,ogrDanışman,ogrKayit) values(@name,@surname,@pass,@tc,@dt,@dy,@tel,@adress,@mail,@fakulte,@bolum,@danısman,@kt)";
+
             
-            cmd.Parameters.AddWithValue("@name", textBoxAD.Text);
-            cmd.Parameters.AddWithValue("@surname", textBoxSOYAD.Text.ToUpper());
-            cmd.Parameters.AddWithValue("@pass", textBoxSİFRE.Text);
-            cmd.Parameters.AddWithValue("@tc",maskedTextBoxTC.Text);
-            cmd.Parameters.AddWithValue("@dt", DateTime.Now);
-            cmd.Parameters.AddWithValue("@dy", comboBoxDY.Text);
-            cmd.Parameters.AddWithValue("@tel", textBoxTEL.Text);
-            cmd.Parameters.AddWithValue("@adress", textBoxADRES.Text);
-            cmd.Parameters.AddWithValue("@mail", textBoxMAİL.Text);
-            cmd.Parameters.AddWithValue("@fakulte", comboBoxFAKULTE.Text);
-            cmd.Parameters.AddWithValue("@bolum", comboBoxBOLUM.Text);
-            cmd.Parameters.AddWithValue("@danısman", textBoxDANISMAN.Text);
-            cmd.Parameters.AddWithValue("@kt", DateTime.Now);
+            cmd = new SqlCommand();
+            string sqlSorgu1 = "insert into tbl_ogrenci(ogrAd,ogrSoyad,ogrSifre,ogrTc,ogrDt,ogrDy,ogrTel,ogrAdres,ogrMail,ogrFakulte,ogrBolum,ogrDanışman,ogrKayit) values(@name,@surname,@pass,@tc,@dt,@dy,@tel,@adress,@mail,@fakulte,@bolum,@danısman,@kt)";
+                
+            //textboxlardan herhangi birinin boş kalması durumunda uyarı veren if yapısı
+                if (textBoxAD.Text != "" && textBoxSOYAD.Text != "" && textBoxSİFRE.Text != "" && maskedTextBoxTC.Text != "" && comboBoxDY.Text != "" && textBoxTEL.Text != "" && textBoxADRES.Text != "" && textBoxMAİL.Text != "" && comboBoxFAKULTE.Text != "" && comboBoxBOLUM.Text != "" && textBoxDANISMAN.Text != "" )
+                {
+                    cmd.Parameters.AddWithValue("@name", textBoxAD.Text);
+                    cmd.Parameters.AddWithValue("@surname", textBoxSOYAD.Text.ToUpper());
+                    cmd.Parameters.AddWithValue("@pass", textBoxSİFRE.Text);
+                    cmd.Parameters.AddWithValue("@tc", maskedTextBoxTC.Text);
+                    cmd.Parameters.AddWithValue("@dt", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@dy", comboBoxDY.Text);
+                    cmd.Parameters.AddWithValue("@tel", textBoxTEL.Text);
+                    cmd.Parameters.AddWithValue("@adress", textBoxADRES.Text);
+                    cmd.Parameters.AddWithValue("@mail", textBoxMAİL.Text);
+                    cmd.Parameters.AddWithValue("@fakulte", comboBoxFAKULTE.Text);
+                    cmd.Parameters.AddWithValue("@bolum", comboBoxBOLUM.Text);
+                    cmd.Parameters.AddWithValue("@danısman", textBoxDANISMAN.Text);
+                    cmd.Parameters.AddWithValue("@kt", DateTime.Now);
 
-            Veri_Islemleri.veriAktarma(sqlSorgusu, cmd);
-            Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
+                    Veri_Islemleri.veriAktarma(sqlSorgu1, cmd);
+                    Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
 
-            MessageBox.Show("Öğrenci Kaydedildi!", "KAYIT EKLENDİ", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            txtTemizlemeFonk();
+                    MessageBox.Show("Öğrenci Kaydedildi!", "KAYIT EKLENDİ", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    txtTemizlemeFonk();
+                }
+            else
+            {
+                MessageBox.Show("Tüm alanları doldurunuz!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+                
+            }
+                
+            
+            
+            
 
-        }
+        
 
+    
         //database'deki verileri guncelleme islemi
         private void button3_Click(object sender, EventArgs e)
         {
             con = new SqlConnection(Veritabani_Baglantisi.sqlCon);
-            string sqlSorgu = "update tbl_ogrenci set ogrAd=@name,ogrSoyad=@surname,ogrSifre=@pass,ogrTc=@tc,ogrDt=@dt,ogrDy=@dy,ogrTel=@tel,ogrAdres=@adress,ogrMail=@mail,ogrFakulte=@fakulte,ogrBolum=@bolum,ogrDanışman=@danisman,ogrKayit=@kt where ogrNo=@nmra";
+            string sqlSorgu2 = "update tbl_ogrenci set ogrAd=@name,ogrSoyad=@surname,ogrSifre=@pass,ogrTc=@tc,ogrDt=@dt,ogrDy=@dy,ogrTel=@tel,ogrAdres=@adress,ogrMail=@mail,ogrFakulte=@fakulte,ogrBolum=@bolum,ogrDanışman=@danisman,ogrKayit=@kt where ogrNo=@nmra";
             cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@nmra", textBoxNO.Text);
             cmd.Parameters.AddWithValue("@name", textBoxAD.Text);
@@ -100,7 +117,7 @@ namespace OBS.ogrenci
             cmd.Parameters.AddWithValue("@bolum", comboBoxBOLUM.Text);
             cmd.Parameters.AddWithValue("@danisman", textBoxDANISMAN.Text);
             cmd.Parameters.AddWithValue("@kt", DateTime.Now);
-            Veri_Islemleri.veriAktarma(sqlSorgu, cmd);
+            Veri_Islemleri.veriAktarma(sqlSorgu2, cmd);
             Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
 
             MessageBox.Show("Güncelleme İşlemi Gerçekleşti!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -130,6 +147,18 @@ namespace OBS.ogrenci
             Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
         }
 
-       
+        //database'den veri silme islemi
+        private void button4_Click(object sender, EventArgs e)
+        {
+            con = new SqlConnection(Veritabani_Baglantisi.sqlCon);
+            string sqlSorgu3 = "delete from tbl_ogrenci where ogrNo=@no";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@no", textBoxNO.Text);
+            Veri_Islemleri.veriAktarma(sqlSorgu3, cmd);
+            Veritabani_Baglantisi.gridVeriAktarimi(dataGridView1, "select * from tbl_ogrenci");
+
+            MessageBox.Show("Öğrenci Kaydı Silindi!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtTemizlemeFonk();
+        }
     }
 }
