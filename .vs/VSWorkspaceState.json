@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\OBS",
+    "\\OBS\\akademisyen",
     "\\OBS\\ogrenci"
   ],
-  "SelectedNode": "\\OBS\\ogrenci\\ogrenciBilgileri.cs",
+  "SelectedNode": "\\OBS\\akademisyen",
   "PreviewInSolutionExplorer": false
 }
