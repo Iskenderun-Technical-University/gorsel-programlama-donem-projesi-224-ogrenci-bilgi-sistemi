@@ -99,5 +99,12 @@ namespace OBS.akademisyen
                 MessageBox.Show("Bilgileriniz Başarıyla Güncellendi!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            akademisyenSifre tiklaGir = new();
+            tiklaGir.ShowDialog();
+            
+        }
     }
 }

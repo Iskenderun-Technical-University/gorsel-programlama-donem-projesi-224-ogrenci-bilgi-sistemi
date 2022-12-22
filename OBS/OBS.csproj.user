@@ -17,6 +17,9 @@
     <Compile Update="akademisyen\akademisyenNotGirisi.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="akademisyen\akademisyenSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="kullanicigirisekrani.cs">
       <SubType>Form</SubType>
     </Compile>
