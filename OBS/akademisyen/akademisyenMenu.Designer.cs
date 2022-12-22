@@ -188,6 +188,7 @@
             this.notGirişVeGüncellemeToolStripMenuItem.Name = "notGirişVeGüncellemeToolStripMenuItem";
             this.notGirişVeGüncellemeToolStripMenuItem.Size = new System.Drawing.Size(261, 26);
             this.notGirişVeGüncellemeToolStripMenuItem.Text = "Not Giriş ve Güncelleme";
+            this.notGirişVeGüncellemeToolStripMenuItem.Click += new System.EventHandler(this.notGirişVeGüncellemeToolStripMenuItem_Click);
             // 
             // menuStrip3
             // 
@@ -261,6 +262,7 @@
             this.Name = "akademisyenMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AKADEMİK PERSONEL BİLGİ SİSTEMİ";
+            this.Load += new System.EventHandler(this.akademisyenMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

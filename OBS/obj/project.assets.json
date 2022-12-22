@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nibat\\.nuget\\packages\\": {}
+    "C:\\Users\\mfgun\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nibat\\Documents\\GitHub\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+      "projectUniqueName": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
       "projectName": "OBS",
-      "projectPath": "C:\\Users\\nibat\\Documents\\GitHub\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
-      "packagesPath": "C:\\Users\\nibat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nibat\\Documents\\GitHub\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
+      "projectPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\OBS.csproj",
+      "packagesPath": "C:\\Users\\mfgun\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mfgun\\Source\\Repos\\gorsel-programlama-donem-projesi-224-ogrenci-bilgi-sistemi\\OBS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nibat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mfgun\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

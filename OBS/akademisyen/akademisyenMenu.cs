@@ -51,5 +51,17 @@ namespace OBS.akademisyen
             tiklaGir.Show();
             this.Hide();
         }
+
+        private void akademisyenMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notGirişVeGüncellemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            akademisyenNotGirisi tiklaGir = new akademisyenNotGirisi();
+            tiklaGir.Show();
+            this.Hide();
+        }
     }
 }
