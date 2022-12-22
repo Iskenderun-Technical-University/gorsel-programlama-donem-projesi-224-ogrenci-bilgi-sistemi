@@ -7,6 +7,12 @@
     <Compile Update="akademisyen\akademisyenMenu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="akademisyen\akademisyenNotGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="akademisyen\akademisyenDevamsızlıkGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="kullanicigirisekrani.cs">
       <SubType>Form</SubType>
     </Compile>

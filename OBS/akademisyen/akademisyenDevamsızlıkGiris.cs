@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OBS.akademisyen
 {
-    public partial class akademisyenNotGirisi : Form
+    public partial class akademisyenDevamsızlıkGiris : Form
     {
-        public akademisyenNotGirisi()
+        public akademisyenDevamsızlıkGiris()
         {
             InitializeComponent();
         }
