@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
+    <Compile Update="akademisyen\akademisyenBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="akademisyen\akademisyenDevamsızlıkGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="akademisyen\akademisyenGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -8,9 +15,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="akademisyen\akademisyenNotGirisi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="akademisyen\akademisyenDevamsızlıkGiris.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="kullanicigirisekrani.cs">
