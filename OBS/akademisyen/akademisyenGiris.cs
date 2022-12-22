@@ -17,6 +17,8 @@ namespace OBS.akademisyen
         {
             InitializeComponent();
         }
+
+        public static string gidenBilgi = "";
         
         private void button2_Click(object sender, EventArgs e)
         {
@@ -42,6 +44,8 @@ namespace OBS.akademisyen
             {
                 akademisyenMenu girAkademisyenMenu = new();
                 MessageBox.Show("Giriş Başarılı! Akademisyen Bilgi Sistemine Yönlendiriliyorsunuz...", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gidenBilgi = textBox1.Text;
+                akademisyenBilgileri ab = new akademisyenBilgileri();
                 this.Hide();
                 girAkademisyenMenu.ShowDialog();
             }

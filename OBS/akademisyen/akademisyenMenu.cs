@@ -44,5 +44,12 @@ namespace OBS.akademisyen
         {
             sayfaGecis();
         }
+
+        private void akademisyenBilgileriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            akademisyenBilgileri tiklaGir = new akademisyenBilgileri();
+            tiklaGir.Show();
+            this.Hide();
+        }
     }
 }

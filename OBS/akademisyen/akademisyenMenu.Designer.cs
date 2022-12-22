@@ -234,6 +234,7 @@
             this.akademisyenBilgileriToolStripMenuItem.Name = "akademisyenBilgileriToolStripMenuItem";
             this.akademisyenBilgileriToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
             this.akademisyenBilgileriToolStripMenuItem.Text = "Akademisyen Bilgileri";
+            this.akademisyenBilgileriToolStripMenuItem.Click += new System.EventHandler(this.akademisyenBilgileriToolStripMenuItem_Click);
             // 
             // pictureBox3
             // 
