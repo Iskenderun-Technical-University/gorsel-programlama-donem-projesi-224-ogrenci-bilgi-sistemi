@@ -1,2 +1,2 @@
 # ÖĞRENCİ BİLGİ SİSTEMİ C# PROJESİ
-Developing by Muhammed Furkan, Berat, Nida...
+Developing by Muhammed Furkan,Nida
